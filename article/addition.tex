@@ -1,0 +1,27 @@
+% chktex-file 44
+% chktex-file 1
+% chktex-file 6
+% chktex-file 46
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% additional packages
+
+\usepackage{color}         % colors
+ \usepackage{ulem}          
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% additional commands
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\vect}[1]{\bold{\boldsymbol{#1}}}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\pvect}[1]{\bold{\boldsymbol{\mathscr{#1}}}}
+
+
+\newcommand{\rev}[2][]{\textcolor{red}{\sout{#1}}\textcolor{blue}{#2}} % revision
+\newcommand{\note}[2]{\textbf{#1} (\textcolor{blue}{#2})} % note for comments
+\newcommand{\para}[1]{\noindent\textbf{#1}\quad} % The topic of a paragraph
+
+\newcommand{\commandusage}[1]{
+\para{Usage of Commands} \note{This paragraph shows how to use these commands.}{Uncomment commandusage before submitting}
+\rev[This is a wrong sentence.]{This is a right sentence.}
+}
